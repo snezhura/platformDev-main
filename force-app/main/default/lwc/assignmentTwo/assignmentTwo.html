@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Person's Information">
+        <lightning-input type="text" onchange={handleChange} name="text"  label="Fist Name"  value={fname}></lightning-input>
+        <lightning-input type="text" onchange={handleChange} name="text"  label="Last Name"  value={lname}></lightning-input>
+        <lightning-input type="text" onchange={handleChange} name="text"  label="Email"      value={email}></lightning-input>
+        <lightning-input type="text" onchange={handleChange} name="text"  label="Phone"      value={phone}></lightning-input>
+        <lightning-input type="text" onchange={handleChange} name="text"  label="Title"      value={title}></lightning-input>
+        <lightning-input type="text" onchange={handleChange} name="text"  label="Department" value={depar}></lightning-input>
+        
+
+        <lightning-button variant="brand" label="Display what I typed" title="Primary action" onclick={saveData} class="slds-m-left_x-small"></lightning-button>
+        <template if:true={savedData}>
+            Entered Data: {savedData}
+        </template>
+    </lightning-card>
+</template>
