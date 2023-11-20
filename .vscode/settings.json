@@ -22,5 +22,6 @@
     "**/.mvn": true,
     "**/.exchange_modules_tmp": true,
     ".mule": true
-  }
+  },
+  "editor.defaultFoldingRangeProvider": "salesforce.salesforcedx-vscode-apex"
 }
